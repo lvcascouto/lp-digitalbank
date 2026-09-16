@@ -1,14 +1,14 @@
 <div align="center">
 
-# Digitalbank
+## <img src="assets/svg/logo-dark.svg" width="220" height="220" alt="Logo Digitalbank"/>
 
-**Landing Page desenvolvida a partir do desafio do Frontend Mentor**
+**Landing Page desenvolvida a partir de um desafio do Frontend Mentor**
 
-*Prática de arquitetura Sass, design tokens e layout responsivo com AXIS*
+*Projeto de estudo e prática com arquitetura AXIS*
 
-[![Status](https://img.shields.io/badge/status-concluído-e8e4de?style=flat-square&labelColor=10b981&color=1c1b2e)](https://lucas16716.github.io/lp-digitalbank/)&nbsp;
-[![Feito com AXIS](https://img.shields.io/badge/desenvolvido%20com-AXIS-e8e4de?style=flat-square&labelColor=3437e6&color=1c1b2e)](https://github.com/lucas16716/axis)&nbsp;
-[![Finalidade Estudo](https://img.shields.io/badge/finalidade-estudo-e8e4de?style=flat-square&labelColor=orange&color=1c1b2e)]()&nbsp;
+[![Status](https://img.shields.io/badge/status-concluído-e8e4de?style=flat-square&labelColor=10b981&color=1c1b2e)](https://lvcascouto.github.io/lp-digitalbank/)&nbsp;
+[![Desenvolvido com AXIS](https://img.shields.io/badge/desenvolvido%20com-AXIS-e8e4de?style=flat-square&labelColor=3437e6&color=1c1b2e)](https://github.com/lvcascouto/axis)&nbsp;
+[![Finalidade](https://img.shields.io/badge/finalidade-estudo-e8e4de?style=flat-square&labelColor=orange&color=1c1b2e)](https://github.com/lvcascouto/axis)&nbsp;
 [![Licença](https://img.shields.io/badge/licença-MIT-e8e4de?style=flat-square&labelColor=ef4444&color=1c1b2e)](./LICENSE)
 
 </div>
@@ -20,33 +20,40 @@
   <a href="#estrutura">Estrutura</a>
 </p>
 
-<h2 id="projeto">PROJETO</h2>
+<br>
 
-Solução para o desafio [Digitalbank Landing Page](https://www.frontendmentor.io/challenges/digital-bank-landing-page-WaUhkoDN) do Frontend Mentor, desenvolvida como exercício prático de arquitetura Sass.
+## PROJETO
 
-O objetivo não foi apenas replicar o layout — foi aplicar o [AXIS](https://github.com/lucas16716/axis), minha própria arquitetura Sass, em um projeto real, consolidando a disciplina de tokens de design, sistema de componentes e responsividade fluida, além de aplicar práticas imprecindíveis de acessibilidade.
+Solução desenvolvida para o desafio [Digitalbank Landing Page](https://www.frontendmentor.io/challenges/digital-bank-landing-page-WaUhkoDN) do **Frontend Mentor**, utilizada como exercício prático para aplicar e validar o [AXIS](https://github.com/lvcascouto/axis), minha arquitetura Sass própria.
 
-🌐 [Acesse o projeto](https://lucas16716.github.io/lp-digitalbank/)
+O objetivo foi além da reprodução visual do layout. O projeto foi desenvolvido para consolidar práticas de organização de estilos, utilização de design tokens, criação de componentes e construção de interfaces responsivas com menor dependência de media queries e conceitos imprecindíveis de acessibilidade.
 
-<h2 id="o-que-pratiquei">O QUE PRATIQUEI</h2>
+A implementação também teve foco em **acessibilidade, tipografia fluida, composição de layouts com Flexbox e Grid e otimização do CSS para produção**.
 
-- 🏗️ **Arquitetura AXIS:** aplicação das cinco camadas (abstracts, base, layout, components, sections) em um projeto do zero.
-- 🎨 **Design tokens semânticos:** cores, tipografia, espaçamento e interações definidos por partial.
-- 📐 **Design Fluido:** uso inteligente de `clamp()` e Flexbox/Grid para reduzir a dependência excessiva de media queries.
-- 📱 **Responsividade:** `@include respond()` para controle cirúrgico de breakpoints e sobreposição de elementos complexos.
-- ♿ **Acessibilidade Avançada:** `aria-labelledby`, navegação por teclado (`:focus-visible` ring), links expansíveis via CSS sem quebrar o fluxo do leitor de tela, e alertas semânticos para `target="_blank"`.
-- 🔍 **SEO e social:** Open Graph, Twitter Card e URL canônica configurados.
-- ⚡ **Otimização de produção:** UnCSS Online + CSS minificado via Live Sass Compiler (~80% de redução).
+🌐 [Acesse o projeto](https://lvcascouto.github.io/lp-digitalbank/)
 
-<h2 id="tecnologias">TECNOLOGIAS</h2>
+## O QUE PRATIQUEI
+
+- **Arquitetura AXIS** — aplicação das cinco camadas da arquitetura: abstracts, base, layout, components e sections
+- **Design tokens semânticos** — organização de cores, tipografia, espaçamento e interações por meio de partials
+- **Design fluido** — utilização de `clamp()`, Flexbox e Grid para criar layouts adaptáveis e reduzir a dependência de media queries
+- **Responsividade** — utilização do mixin `respond()` para controle dos breakpoints e adaptação de elementos complexos
+- **Acessibilidade** — aplicação de atributos ARIA, navegação por teclado com `:focus-visible`, links expansíveis via CSS sem quebrar o fluxo do leitor de tela e estrutura semântica
+- **SEO e compartilhamento social** — configuração de meta tags, Open Graph, Twitter Card e URL canônica
+- **Otimização de produção** — remoção de estilos não utilizados (UnCSS Online) e minificação do CSS via Live Sass Compiler para produção
+
+## TECNOLOGIAS
 
 | Tecnologia | Uso |
 |---|---|
-| HTML5 | Código semântico e acessível |
-| Sass (SCSS) | Arquitetura modular AXIS |
-| CSS | Compilado e minificado via Live Sass Compiler |
+| HTML5 | Estrutura semântica e acessível |
+| Sass/SCSS | Arquitetura modular AXIS e organização dos estilos |
+| CSS3 | Layout, responsividade, tipografia fluida e interações |
+| Live Sass Compiler | Compilação e minificação dos arquivos Sass/SCSS |
+| UnCSS | Remoção de estilos não utilizados na versão de produção |
+| Git/GitHub | Versionamento e publicação do projeto |
 
-<h2 id="estrutura">ESTRUTURA</h2>
+## ESTRUTURA
 
 ```
 lp-digitalbank/
@@ -62,20 +69,20 @@ lp-digitalbank/
 │   │   └── main.css         → CSS compilado (desenvolvimento)
 │   └── sass/
 │       ├── abstracts/       → Tokens, funções e mixins (AXIS)
-│       ├── base/            → Reset, tipografia, global e utilitários (AXIS)
-│       ├── layout/          → Container flex e grid (AXIS)
-│       ├── components/      → Button, card (AXIS)
-│       ├── sections/        → header, hero, about, articles, footer
-│       └── main.scss        → Ponto de entrada único
-└── index.html
+│       ├── base/            → Reset, tipografia, estilos globais e utilitários (AXIS)
+│       ├── layout/          → Container e estruturas de layout (AXIS)
+│       ├── components/      → Componentes reutilizáveis (AXIS)
+│       ├── sections/        → Estilos específicos de cada seção
+│       └── main.scss        → Ponto de entrada da arquitetura
+└── index.html               → Página principal
 ```
 
-<h2>LICENÇA</h2>
+## LICENÇA
 
 O código deste projeto está licenciado sob a licença MIT — veja o arquivo [LICENSE](./LICENSE).  
 O design original pertence ao [Frontend Mentor](https://www.frontendmentor.io) e está sujeito aos [termos de uso](https://www.frontendmentor.io/terms) da plataforma.
 
-<h2>AUTOR</h2>
+## AUTOR
 
-Desenvolvido por [Lucas Couto](https://linkedin.com/in/lucas-coutoti).  
-Veja meu trabalho em [Lucas Code](https://bio.site/lucascode).
+Desenvolvido por [Lucas Couto](https://linkedin.com/in/lucascouto-dev).  
+Veja meu trabalho em [Lucas Code](https://lvcascode.com.br).
